@@ -1,15 +1,15 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
-import ReactIcon from "./assets/react.svg";
-import TailwindCSSIcon from "./assets/tailwindcss.svg";
-import JavaScriptIcon from "./assets/javascript.svg";
-import NpmIcon from "./assets/npm.svg";
-import FramerMotionIcon from "./assets/framermotion.svg";
-import ExpressJSIcon from "./assets/expressjs.svg";
-import GitHubIcon from "./assets/github.svg";
-import FigmaIcon from "./assets/figma.svg";
-import HTML5Icon from "./assets/html5.svg";
-import VSCodeIcon from "./assets/vscode.svg";
+import ReactIcon from "../assets/react.svg";
+import TailwindCSSIcon from "../assets/tailwindcss.svg";
+import JavaScriptIcon from "../assets/javascript.svg";
+import NpmIcon from "../assets/npm.svg";
+import FramerMotionIcon from "../assets/framermotion.svg";
+import ExpressJSIcon from "../assets/expressjs.svg";
+import GitHubIcon from "../assets/github.svg";
+import FigmaIcon from "../assets/figma.svg";
+import HTML5Icon from "../assets/html5.svg";
+import VSCodeIcon from "../assets/vscode.svg";
 
 function Dock() {
     const apps = [
