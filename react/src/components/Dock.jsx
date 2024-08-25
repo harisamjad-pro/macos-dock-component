@@ -91,7 +91,11 @@ function Dock() {
     }
 
     return (
-        <div className="relative h-dvh flex justify-center items-end p-4 select-none bg-blue-600" onClick={handleClickOutside}>
+        <>
+        <div className="bg-blue-600 h-dvh p-4 hidden justify-center items-center max-lg:flex">
+            <h1 className="text-2xl text-center text-white">Use Desktop (atleast 1024px) or Web Screen to experience it.</h1>
+        </div>
+        <div className="relative h-dvh flex justify-center items-end p-4 select-none bg-blue-600 max-lg:hidden" onClick={handleClickOutside}>
             {isOption && (
                 <ul className="bg-[rgba(255,255,255,0.8)] px-2 py-2 grid rounded-xl absolute z-10 bottom-32 text-base text-black font-medium shadow" ref={optionRef} style={{ left: `${optionAxis - 24}px`, backdropFilter: "saturate(180%) blur(24px)" }}>
                     {optionsTray.map((tray) => (
@@ -168,6 +172,7 @@ function Dock() {
                 )}
             </motion.div>
         </div>
+        </>
     );
 }
 
